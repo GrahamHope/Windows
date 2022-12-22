@@ -1,0 +1,3 @@
+$now = (Get-CimInstance Win32_OperatingSystem).LocalDateTime
+$boot = (Get-CimInstance Win32_OperatingSystem).LastBootUpTime
+($now - $boot).Days
